@@ -1,9 +1,7 @@
-name: Hello World!
-  on: push
-
+name: learn-github-actions
+on: [push]
 jobs:
-  build:
-    name: Greeting
+  check-bats-version:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "Hello,World!"
+      - run: echo "this is pen"
