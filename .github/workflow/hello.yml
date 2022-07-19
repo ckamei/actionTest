@@ -1,7 +1,10 @@
-name: learn-github-actions
-on: [push]
+name: Hello World
+
+on: 
+  workflow_dispatch:
+
 jobs:
-  check-bats-version:
+  say_hello:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "this is pen"
+      - run: echo "Hello World!"
